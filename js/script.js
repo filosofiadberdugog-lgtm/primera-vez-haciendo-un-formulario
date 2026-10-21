@@ -6,5 +6,5 @@ boton.addEventListener("click", () => {
 });
 
 function saludar() {
-    alert("¡Hola! Ya estoy aprendiendo JavaScript.");
+    alert("¡Que honda! estoy aprendiendo a programar paginas web usando visual y cargadolas a mi repo en githud, regalenme una estrella si vez esto.");
 }

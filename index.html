@@ -3,32 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mi primera página</title>
+    <title>Galahad Pendragon | Imperium</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <div class="container mt-4">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 col-lg-6">
 
-                <div class="card text-white bg-dark mb-3">
-                    <div class="card-header">
-                      <p>
-                        <h5 class="card-title">Camilo Sanchez</h5>
-                      </p>
+                <!-- ===== ENCABEZADO IMPERIAL - BOX AZUL FRIO METALIZADO ===== -->
+                <header class="encabezado-imperio text-center">
+                    
+                    <!-- LOGO G.p - CIRCULO PERFECTO - LETRAS CURVIVAS -->
+                    <div class="circulo-imperio mx-auto">
+                        <span class="letras-gp">G.p</span>
                     </div>
-                    <div class="card-body">
-                        <p class="card-text">Profesion: Analista, programador junior</p>
-                        <p class="card-text">Analista y programador junior en formación en Análisis y Desarrollo de Software (SENA). Tengo experiencia en levantamiento de requerimientos, casos de uso y modelado UML, aplicada en el diseño de un marketplace con múltiples roles de usuario. Soy metódico, autodidacta y busco mi primera oportunidad en un equipo de desarrollo o análisis donde aportar y crecer.</p>
-                        <button class="btn btn-primary" onclick="saludar()">Haz clic aquí</button>
+
+                    <div class="linea-imperial"></div>
+
+                    <h1 class="nombre-imperio">GALAHAD PENDRAGON</h1>
+                    <p class="subtitulo-imperio">Analista y Desarrollador de Software</p>
+                    <p class="subtitulo-imperio">Desarrollador Full-Stack ⚔️ SPQR ⚔️</p>
+
+                    <div class="linea-imperial"></div>
+                    <p class="lema-romano">✦ HONOR • LOGICA • SABIDURIA ✦</p>
+
+                </header>
+
+                <!-- ===== BODY - BOX BLANCA DELINEADA AZUL SUAVE ===== -->
+                <div class="cuerpo-blanco-imperio">
+
+                    <h2 class="titulo-seccion">Sobre Mí</h2>
+                    <p class="texto-cuerpo">Profesión: Desarrollador Full-Stack</p>
+                    <p class="texto-cuerpo">
+                        Filósofo, analista y diseñador con conocimientos en Big History, Desarrollo y análisis de software.
+                        Soy una persona que cree en la honorabilidad y el trabajo en equipo, tengo habilidades en pensamiento lógico y pensamiento crítico,
+                        me gusta aprender cosas nuevas y compartir mis conocimientos con los demás. Poseo inglés como segundo idioma.
+                    </p>
+
+                    <div class="text-center my-3">
+                        <button class="btn-imperio" onclick="saludar()">ACCEDER</button>
                     </div>
+
+                    <!-- HABILIDADES -->
+                    <h2 class="titulo-seccion">⚜️ HABILIDADES ⚜️</h2>
+                    <div class="habilidades-container">
+                        <div class="skill-imperio">🧠 Pensamiento Lógico</div>
+                        <div class="skill-imperio">🔍 Pensamiento Crítico</div>
+                        <div class="skill-imperio">🇬🇧 Segunda Lengua: Inglés</div>
+                    </div>
+
+                    <!-- FORMULARIO CONTACTO -->
+                    <section class="contacto">
+                        <h2 class="titulo-seccion">Formulario de Contacto</h2>
+                        <p class="texto-contacto">¿Tienes una pregunta o una propuesta? Completa el siguiente formulario.</p>
+                    </section>
+
+                    <form id="formularioContacto">
+                        <div class="campo">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required minlength="3">
+                        </div>
+
+                        <div class="campo">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" name="correo" placeholder="Galahad.Pendragon@correo.com" required minlength="3">
+                        </div>
+
+                        <!-- ASUNTO CON MENSAJE OCULTO -->
+                        <div class="campo campo-asunto">
+                            <label for="asunto">Asunto</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="Consulta">Consulta</option>
+                                <option value="Proyecto">Propuesta de proyecto</option>
+                                <option value="Formacion">Formación</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                            <span class="mensaje-oculto">debe agregar al menos más de 5 lineas</span>
+                        </div>
+
+                        <div class="campo">
+                            <label for="mensajeContacto">Mensaje</label>
+                            <textarea id="mensajeContacto" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required minlength="10"></textarea>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn-imperio">Iniciar Sesión</button>
+                        </div>
+                    </form>
+
                 </div>
+
+                <footer class="text-center mt-3">
+                    <p class="pie-romano">© MMXXVI - Galahad Pendragon - Imperium Romanum</p>
+                </footer>
 
             </div>
         </div>
     </div>
 
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
